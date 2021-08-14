@@ -10,7 +10,7 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #111011;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sora', sans-serif;
 }
 .logo{
     color: rgb(226, 226, 226);
@@ -33,11 +33,35 @@ nav{
     font-weight: bold;
     font-size: 14px;
 }
-.burger{
+
+/*
+barrinha animada (ainda não completa)
+
+a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: #ff66b3;
+    transition: all ease-in-out 200ms;
+}
+
+li a:hover::after{
+    width: 60%;
+}
+*/
+
+li a:hover{
+    color: #ff66b3;
+    transition: all ease-in-out 200ms;
+}
+
+.hamburger{
     display: none;
     cursor: pointer;
 }
-.burger div{
+.hamburger div{
     width: 25px;
     height: 3px;
     background-color: rgb(226, 226, 226);
@@ -72,7 +96,7 @@ nav{
     .nav-links li{
         opacity: 0;
     }
-    .burger{
+    .hamburger{
         display: block;
     }
 }

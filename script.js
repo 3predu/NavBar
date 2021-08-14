@@ -1,9 +1,9 @@
 const navSlide = () => {
-    const burger = document.querySelector('.burger');
+    const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll ('.nav-links li');
     
-    burger.addEventListener('click', () =>{
+    hamburger.addEventListener('click', () =>{
         //alternância da Nav
         nav.classList.toggle('nav-active');
 
@@ -17,7 +17,7 @@ const navSlide = () => {
             }
         })
         //animação burger(3 linhas)
-        burger.classList.toggle('toggle');
+        hamburger.classList.toggle('toggle');
     });
 
 }
